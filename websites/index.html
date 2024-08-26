@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/events_styles.css">
+    <link rel="stylesheet" href="css/ourteam_styles.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <img src="./assets/pokemon_profile.jpg" alt="Serenita">
+    </div>
+
+    <header>
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <img src="./assets/pokemon_profile.jpg" alt="Serenita Logo">
+                <span class="logo-text">Serenita</span>
+            </a>            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+               
+                <ul class="nav-list">
+                    <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#events" onclick="navigateTo('events')">Events</a></li>
+                    <li><a href="#our-team" onclick="navigateTo('our-team')">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <section id="home" class="section active">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="./assets/1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/4.jpeg" alt="Image 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/5.jpeg" alt="Image 5">
+                    </div>
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>            
+              
+            <h1 class="title-home">Serenita</h1>
+            <p class="text-home">“Serenità” merupakan kondisi dimana kita merasakan kenyaman dan kehangatan baik secara mental maupun fisik. “Serenità” diambil dari kata ‘Serenity’ atau ketenangan. Acara Camping Night ini diselenggarakan dengan tujuan untuk membangun keakraban dan solidaritas antar siswa, serta mengembangkan kemampuan dalam bersosialisasi. Serenità mengambil tema yaitu ‘Keluarga’ karena dengan adanya event ini, diharapkan kita semua bersatu sebagai keluarga besar Ignatius Global School yang harmonis.</p>
+        </section>
+
+        <section id="events" class="section">
+            <h2>Acara Mendatang</h2>
+            <p>Ikuti berbagai acara menarik di Serenity Camping Night dan nikmati pengalaman yang tak terlupakan.</p>
+        </section>
+
+        <section id="our-team" class="section">
+            <div class="team-container">
+                <div class="category-photo">
+                  <img id="category-photo" src="./assets/1.jpeg" alt="Category Photo" />
+                </div>
+                <div class="filter-container">
+                  <select id="team-filter" class="filter-dropdown">
+                    <option value="all">All Members</option>
+                    <option value="chairperson">Chairman</option>
+                    <option value="secretary">Secretary</option>
+                    <option value="treasurer">Treasurer</option>
+                    <option value="event">Event Section</option>
+                    <option value="communication">Communication</option>
+                    <option value="multimedia">Multimedia</option>
+                    <option value="design">Design</option>
+                    <option value="documentation">Documentation</option>
+                    <option value="art-appreciation">Art Appreciation</option>
+                    <option value="languages">Languages</option>
+                    <option value="lineup-cleanliness">Lineup & Cleanliness</option>
+                    <option value="shoe-guards">Shoe Guards</option>
+                    <option value="security">Security</option>
+                    <option value="catering">Catering</option>
+                  </select>
+                </div>
+                <div id="member-cards" class="member-cards"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="gradient"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Group Four</h3>
+                <p>Perkumpulan orang magang paling keren</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-map-marker-alt"></i></h3>
+                <p>Jl. Mayor Ruslan No. 118, 20 Ilir I, Kec. Ilir Timur I, Palembang</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial Media</h3>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/IGScare" aria-label="Facebook Serenita"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/IgnatiusGlobal" aria-label="Twitter Serenita"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ignatiusglobal.sch/" aria-label="Instagram Serenita"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Serenita. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+    <script src="js/ourteam.js"></script>
+    <script></script>
+</body>
+</html>
