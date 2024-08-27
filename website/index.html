@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/events_styles.css">
+    <link rel="stylesheet" href="css/ourteam_styles.css">
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <img src="https://www.ignatiusglobal.sch.id/media_library/images/09666a0849a5cc9a158cf4077a779ea9.png" alt="Serenita">
+    </div>
+
+    <header>
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <img src="https://www.ignatiusglobal.sch.id/media_library/images/09666a0849a5cc9a158cf4077a779ea9.png" alt="Serenita Logo">
+                <span class="logo-text">Serenita</span>
+            </a>            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+               
+                <ul class="nav-list">
+                    <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#events" onclick="navigateTo('events')">Events</a></li>
+                    <li><a href="#our-team" onclick="navigateTo('our-team')">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <section id="home" class="section active">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="./assets/1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/4.jpeg" alt="Image 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./assets/5.jpeg" alt="Image 5">
+                    </div>
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>            
+              
+            <h1 class="title-home">Serenita</h1>
+            <p class="text-home">“Serenità” merupakan kondisi dimana kita merasakan kenyaman dan kehangatan baik secara mental maupun fisik. “Serenità” diambil dari kata ‘Serenity’ atau ketenangan. Acara Camping Night ini diselenggarakan dengan tujuan untuk membangun keakraban dan solidaritas antar siswa, serta mengembangkan kemampuan dalam bersosialisasi. Serenità mengambil tema yaitu ‘Keluarga’ karena dengan adanya event ini, diharapkan kita semua bersatu sebagai keluarga besar Ignatius Global School yang harmonis.</p>
+        </section>
+
+        <section id="events" class="events-section section">
+            <div class="container">
+                <h2 class="section-title">Serenita Events</h2>
+                
+                <div class="events-controls">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Cari kegiatan..." id="event-search">
+                        <button type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="filter-container">
+                        <select class="filter-dropdown" id="category-filter">
+                            <option value="all">All Category</option>
+                            <option value="outdoor">Outdoor</option>
+                            <option value="team-building">Team Building</option>
+                            <option value="performance">Performance</option>
+                            <option value="culinary">Culinary</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="events-grid">
+                    <div class="event-card" data-category="outdoor" data-event-id="1">
+                        <div class="event-image">
+                            <img src="./assets/api-unggun.jpeg" alt="Api Unggun">
+                            <div class="event-date">
+                                <span class="day">14</span>
+                                <span class="month">Sep</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Api Unggun</h3>
+                            <p class="event-description">🔥 Di bawah langit malam, para peserta akan berkumpul di sekitar api unggun untuk berbagi cerita, bernyanyi bersama, dan menikmati cemilan. Ini momen sempurna untuk mempererat hubungan dengan teman-teman dan menikmati kebersamaan di bawah sinar rembulan dan cahaya malam! 🌙</p>
+                            <div class="event-meta">
+                                <span class="event-time"><i class="far fa-clock"></i> 19:00 - 20:00</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Lapangan Basket</span>
+                            </div>
+                            <a href="#" class="btn-details">Selengkapnya</a>
+                        </div>
+                    </div>
+        
+                    <div class="event-card" data-category="outdoor" data-event-id="2">
+                        <div class="event-image">
+                            <img src="./assets/jalan-pagi.jpeg" alt="Jalan Pagi">
+                            <div class="event-date">
+                                <span class="day">14</span>
+                                <span class="month">Sep</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Jalan Pagi</h3>
+                            <p class="event-description">🎉 Mulai hari dengan jalan pagi di sekitar area IGS!! Para peserta akan diajak berjalan santai di sekitar area IGS dan menikmati udara segar di pagi hari. Selain itu, jalan pagi juga bermanfaat untuk kesehatan, membangkitkan energi, dan mempersiapkan tubuh untuk aktivitas selanjutnya! 🚶👣</p>
+                            <div class="event-meta">
+                                <span class="event-time"><i class="far fa-clock"></i> 04:30 - 05:30</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Area IGS</span>
+                            </div>
+                            <a href="#" class="btn-details">Selengkapnya</a>
+                        </div>
+                    </div>
+        
+                    <div class="event-card" data-category="team-building" data-event-id="3">
+                        <div class="event-image">
+                            <img src="./assets/outbound.jpeg" alt="Outbound">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Sep</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Outbound</h3>
+                            <p class="event-description">Event Serenita akan ada 🫂 Outbound 🫂 yang menawarkan pengalaman seru dengan berbagai tantangan yang harus dihadapi bersama tim! Kegiatan ini nggak cuma buat have fun, tapi juga meningkatkan kekompakan dan keterampilan bekerja sama! Dengan serangkaian permainan dan tantangan yang seru, peserta akan belajar tentang kepemimpinan, komunikasi, dan strategi.</p>
+                            <div class="event-meta">
+                                <span class="event-time"><i class="far fa-clock"></i> 06:15 - 08:15</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> MZ and GF</span>
+                            </div>
+                            <a href="#" class="btn-details">Selengkapnya</a>
+                        </div>
+                    </div>
+        
+                    <div class="event-card" data-category="performance" data-event-id="4">
+                        <div class="event-image">
+                            <img src="./assets/performance.jpeg" alt="Performance">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Sep</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Performance</h3>
+                            <p class="event-description">Tentu saja, di event Serenita akan ada banyak penampilan seru dari teman-teman kalian! Mulai dari bernyanyi, menari, band, dan lain-lain. Jangan lewatkan semua penampilan menariknya! 🥳🥳</p>
+                            <div class="event-meta">
+                                <span class="event-time"><i class="far fa-clock"></i> - </span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Hall</span>
+                            </div>
+                            <a href="#" class="btn-details">Selengkapnya</a>
+                        </div>
+                    </div>
+        
+                    <div class="event-card" data-category="culinary" data-event-id="5">
+                        <div class="event-image">
+                            <img src="./assets/cooking.jpeg" alt="Cooking">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Sep</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">Cooking</h3>
+                            <p class="event-description">Peserta akan berlomba antar tim untuk menyiapkan makanan yang paling lezat, menarik, dan tentunya original. Siapkan keterampilan memasak kalian! 👨‍🍳🍲</p>
+                            <div class="event-meta">
+                                <span class="event-time"><i class="far fa-clock"></i> 15:50 - 17:00</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i>Lapangan Basket</span>
+                            </div>
+                            <a href="#" class="btn-details">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="pagination">
+                    <button class="btn-prev">Sebelumnya</button>
+                    <span class="page-numbers">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </span>
+                    <button class="btn-next">Selanjutnya</button>
+                </div>
+            </div>
+        </section>
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-event-details">
+                    <h3 class="modal-event-title">Event Title Here</h3>
+                    <img src="#" alt="Event Image" class="modal-event-image">
+                    <p class="modal-event-description">Event description goes here. This can include more detailed information about the event, schedule, speakers, etc.</p>
+                    <div class="modal-event-meta">
+                        <span class="modal-event-time"><i class="far fa-clock"></i> Event Time Here</span>
+                        <span class="modal-event-location"><i class="fas fa-map-marker-alt"></i> Event Location Here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <section id="our-team" class="section">
+            <div class="team-container">
+                <div class="category-photo">
+                  <img id="category-photo" src="./assets/1.jpeg" alt="Category Photo" />
+                </div>
+                <div class="filter-container">
+                  <select id="team-filter" class="filter-dropdown">
+                    <option value="all">All Members</option>
+                    <option value="chairperson">Chairman</option>
+                    <option value="secretary">Secretary</option>
+                    <option value="treasurer">Treasurer</option>
+                    <option value="event">Event Section</option>
+                    <option value="communication">Communication</option>
+                    <option value="multimedia">Multimedia</option>
+                    <option value="design">Design</option>
+                    <option value="documentation">Documentation</option>
+                    <option value="art-appreciation">Art Appreciation</option>
+                    <option value="languages">Languages</option>
+                    <option value="lineup-cleanliness">Lineup & Cleanliness</option>
+                    <option value="shoe-guards">Shoe Guards</option>
+                    <option value="security">Security</option>
+                  </select>
+                </div>
+                <div id="member-cards" class="member-cards"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="gradient"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Group Four</h3>
+                <p>Perkumpulan orang magang paling keren</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-map-marker-alt"></i></h3>
+                <p>Jl. Mayor Ruslan No. 118, 20 Ilir I, Kec. Ilir Timur I, Palembang</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial Media</h3>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/IGScare" aria-label="Facebook Serenita"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/IgnatiusGlobal" aria-label="Twitter Serenita"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ignatiusglobal.sch/" aria-label="Instagram Serenita"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Serenita. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+    <script src="js/ourteam.js"></script>
+    <script src="js/events.js"></script>
+    <script></script>
+</body>
+</html>
