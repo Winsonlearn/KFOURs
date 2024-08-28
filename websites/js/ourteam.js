@@ -115,7 +115,7 @@ const members = [
     name: "Felicia Monica Christine",
     dob: "1 Mei 2008",
     instagram: "feliciiamonica",
-    categories: ["documentation", "languages", "catering"]
+    categories: ["documentation", "languages"]
   },
   {
     name: "Kheisya Mona Maharani",
@@ -159,7 +159,6 @@ const updateContent = (category) => {
     "lineup-cleanliness": "lineup-cleanliness.jpg",
     "shoe-guards": "shoe-guards.jpg",
     "security": "security.jpg",
-    "catering": "catering.jpg",
     "all": "./assets/1.jpeg"
   };
 

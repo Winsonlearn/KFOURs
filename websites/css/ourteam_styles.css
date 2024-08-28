@@ -102,13 +102,27 @@
   margin-right: 0.5rem;
 }
 
+@media (min-width: 1025px) {
+  .category-photo {
+    margin-top: 3rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  .category-photo {
+    margin-top: 2.5rem;
+  }
+
   .member-cards {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
+  .category-photo {
+    margin-top: 2rem;
+  }
+
   .filter-dropdown {
     width: 100%;
     max-width: 300px;
@@ -120,6 +134,10 @@
 }
 
 @media (max-width: 480px) {
+  .category-photo {
+    margin-top: 1.5rem;
+  }
+
   .member-cards {
     grid-template-columns: 1fr;
   }
